@@ -1,0 +1,34 @@
+[2016-10-16 12:13:54,783][INFO ][node                     ] [Whiteout] version[2.4.1], pid[2416], build[c67dc32/2016-09-27T18:57:55Z]
+[2016-10-16 12:13:54,786][INFO ][node                     ] [Whiteout] initializing ...
+[2016-10-16 12:13:58,275][INFO ][plugins                  ] [Whiteout] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2016-10-16 12:13:58,435][INFO ][env                      ] [Whiteout] using [1] data paths, mounts [[New Volume (A:)]], net usable_space [43.6gb], net total_space [61.7gb], spins? [unknown], types [NTFS]
+[2016-10-16 12:13:58,436][INFO ][env                      ] [Whiteout] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-10-16 12:14:08,180][INFO ][node                     ] [Whiteout] initialized
+[2016-10-16 12:14:08,180][INFO ][node                     ] [Whiteout] starting ...
+[2016-10-16 12:14:09,791][INFO ][transport                ] [Whiteout] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2016-10-16 12:14:09,811][INFO ][discovery                ] [Whiteout] elasticsearch/puvjDaQdTFCdwN6wq-fELw
+[2016-10-16 12:14:13,943][INFO ][cluster.service          ] [Whiteout] new_master {Whiteout}{puvjDaQdTFCdwN6wq-fELw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-10-16 12:14:14,202][INFO ][gateway                  ] [Whiteout] recovered [0] indices into cluster_state
+[2016-10-16 12:14:15,262][INFO ][http                     ] [Whiteout] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2016-10-16 12:14:15,266][INFO ][node                     ] [Whiteout] started
+[2016-10-16 21:18:55,898][INFO ][node                     ] [Whiteout] stopping ...
+[2016-10-16 21:18:56,073][INFO ][node                     ] [Whiteout] stopped
+[2016-10-16 21:18:56,073][INFO ][node                     ] [Whiteout] closing ...
+[2016-10-16 21:18:56,123][INFO ][node                     ] [Whiteout] closed
+[2016-10-16 21:19:37,869][INFO ][node                     ] [U-Go Girl] version[2.4.1], pid[5448], build[c67dc32/2016-09-27T18:57:55Z]
+[2016-10-16 21:19:37,874][INFO ][node                     ] [U-Go Girl] initializing ...
+[2016-10-16 21:19:41,151][INFO ][plugins                  ] [U-Go Girl] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2016-10-16 21:19:41,240][INFO ][env                      ] [U-Go Girl] using [1] data paths, mounts [[New Volume (A:)]], net usable_space [43.6gb], net total_space [61.7gb], spins? [unknown], types [NTFS]
+[2016-10-16 21:19:41,241][INFO ][env                      ] [U-Go Girl] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-10-16 21:19:49,357][INFO ][node                     ] [U-Go Girl] initialized
+[2016-10-16 21:19:49,362][INFO ][node                     ] [U-Go Girl] starting ...
+[2016-10-16 21:19:50,963][INFO ][transport                ] [U-Go Girl] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2016-10-16 21:19:50,983][INFO ][discovery                ] [U-Go Girl] elasticsearch/B05dVZlXTFO3dsKBuMI6mg
+[2016-10-16 21:19:55,108][INFO ][cluster.service          ] [U-Go Girl] new_master {U-Go Girl}{B05dVZlXTFO3dsKBuMI6mg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-10-16 21:19:55,318][INFO ][gateway                  ] [U-Go Girl] recovered [0] indices into cluster_state
+[2016-10-16 21:19:56,370][INFO ][http                     ] [U-Go Girl] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2016-10-16 21:19:56,371][INFO ][node                     ] [U-Go Girl] started
+[2016-10-16 23:07:36,257][INFO ][node                     ] [U-Go Girl] stopping ...
+[2016-10-16 23:07:36,382][INFO ][node                     ] [U-Go Girl] stopped
+[2016-10-16 23:07:36,382][INFO ][node                     ] [U-Go Girl] closing ...
+[2016-10-16 23:07:36,445][INFO ][node                     ] [U-Go Girl] closed

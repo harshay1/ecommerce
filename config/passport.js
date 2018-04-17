@@ -1,0 +1,53 @@
+var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
+var User = require('../models/user');
+//Serealization and Deserealization
+passport.serializeUser(function(user, done) {
+    done(null, user._id);
+});
+
+passport.deserializeUser(function(id, done) {
+    User.findById(id, function(err, user) {
+        done(err, user);
+    });
+});
+
+
+//Middleware
+passport.use('local-login', new LocalStrategy({
+    usernameField: 'email',
+    passwordField: 'password',
+    passReqToCallback: true
+}, function(req, email, password, done) {
+    console.log('Entered local login');
+    User.findOne({ email: email }, function(err, user) {
+        console.log('Entered FindOne');
+        if(err)
+            return done(err);
+        if(!user)
+            return done(null, false, req.flash('loginMessage', 'Account with this username does not exist'));
+        if(!user.comparePassword(password))
+            {
+                return done(null, false, req.flash('loginMessage', 'Invalid Password'));
+            }
+        return done(null, user);
+    });
+}));
+
+
+//Custom function for validation
+exports.isAuthenticated = function(req, res, next) {
+    console.log('Entered isAuthenticated');
+    if(req.isAuthenticated())
+        {
+            console.log('Authentication Success');
+            return next();
+        }
+        
+    else
+        {
+            console.log('Authentication Failure');
+            res.redirect('/login');            
+        }
+        
+}

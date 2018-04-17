@@ -1,0 +1,39 @@
+<% layout('layout') -%>
+
+<div class="jumbotron">
+      <div class="container">
+        <h1>Shop Smart and Save Big!</h1>
+        <p>Find your favourite product.</p>
+    <!--    <p><a class="btn btn-primary btn-lg" href="#" role="button">Sign Up &raquo;</a></p> -->
+      </div>
+    </div>
+
+<div class="container">
+    <div class="row">
+        <% for(var i=0; i < products.length; i++) { %>
+        <div class="col-sm-3">
+            <a href="/product/<%= products[i]._id %>">
+                <div class="thumbnail">
+                <img src="<%= products[i].image %>">
+                <div class="caption">
+                    <h1><%= products[i].name %></h1>
+                    <p><%= products[i].category.name %></p>
+                    <p><%= products[i].price %></p>
+                </div>
+            </div>            
+            </a>
+        </div>
+        <% } %>
+        <br>
+        <ul class="pagination text-center">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <% for(var i=1;i<=pages;i++) { %>
+            <% if(i==1) { %>
+            <li><a href="/"><%= i %></a></li>
+            <% } else { %>
+            <li><a href="/page/<%= i %>"><%= i %></a></li>
+            <% } %>
+            <% } %>
+        </ul>
+    </div>
+</div>

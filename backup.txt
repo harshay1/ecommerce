@@ -1,0 +1,16 @@
+app.post('/create-user', function(req, res, next) {
+    console.log('Reached this point');
+    var user = new User();
+    console.log('Reached the 2nd point');
+    user.profile.name = req.body.name;
+    user.password = req.body.password;
+    user.email = req.body.email;
+    
+    
+    user.save(function(err) {
+        if(err)
+            return next(err);
+        else 
+            res.json('Successfully created a new user');
+    });
+});

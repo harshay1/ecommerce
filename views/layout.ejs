@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jumbotron Template for Bootstrap</title>
+      <link rel="stylesheet" href="/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/css/custom.css">
+  </head>
+
+  <body>
+
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <% include ./partials/navbar %>
+    
+      <!-- Example row of columns -->
+        <%- body -%>
+     <!-- /container -->
+      <% include ./partials/footer %>
+      <script   src="http://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <% include ./partials/javascriptOnly %>
+  </body>
+</html>
